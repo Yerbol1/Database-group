@@ -17,6 +17,18 @@ BEGIN
 END;
 $$;
 
+CREATE OR REPLACE PROCEDURE get_products_by_all_sellers()
+LANGUAGE plpgsql
+AS $$
+DECLARE
+    seller_name TEXT;
+BEGIN
+    FOR seller_name IN SELECT name FROM "Seller"
+    LOOP
+        CALL get_products_by_seller(seller_name);
+    END LOOP;
+END;
+$$;
 
 
 
