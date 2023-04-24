@@ -11,4 +11,4 @@ $$ LANGUAGE plpgsql;
 
 
 SELECT insert_product_name(505, 'Lego', 'Lego is the best toy for kids...', 525.89, 'https://image-data.com/lego.jpg', 2);
-SELECT insert_product_name(505, 'Transformer-robot', 'Transformer-robot', 1385.89, 'https://image-data.com/transformer-robot.jpg', 87);
+SELECT insert_product_name(505, 'Transformer-robot', 'Transformer-robot', 1385.89, 'https://image-data.com/transformer-robot.jpg', 2);
